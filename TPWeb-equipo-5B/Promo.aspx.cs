@@ -16,7 +16,7 @@ namespace TPWeb_equipo_5B
 
         }
 
-        protected void validarVoucher (string voucher) {
+        protected bool validarVoucher (string voucher) {
             VoucherNegocio negocio = new VoucherNegocio();
             List<Vouchers> listaVouchers = negocio.Listar();
             bool encontrado =false;
@@ -36,6 +36,7 @@ namespace TPWeb_equipo_5B
             if (encontrado == true && invalido == false)
             {
                 lblMensaje.Text = "Voucher válido.";
+                return true;
             }
             else if (encontrado == true)
             {
@@ -45,12 +46,15 @@ namespace TPWeb_equipo_5B
             {
                 lblMensaje.Text = "Voucher inválido.";
             }
-
+            return false;
         }
 
         protected void btnIngresoVoucher_Click(object sender, EventArgs e)
         {
-            validarVoucher(txtVoucher.Text);
+            if (validarVoucher(txtVoucher.Text))
+            {
+                Response.Redirect("SeleccionPremio.aspx");
+            }
         }
     }
 }
