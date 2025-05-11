@@ -38,6 +38,10 @@
             <asp:Label ID="lblError" runat="server" />
         </asp:Panel>
 
+        <asp:Panel ID="pnlExito" runat="server" Visible="false" CssClass="alert alert-success">
+            <asp:Label ID="lblExito" runat="server" />
+        </asp:Panel>
+
         <!-- Boton Submit -->
         <div>
             <asp:Button ID="btnSubmit" runat="server" Text="Participar!" CssClass="btn btn-primary px-4" OnClick="btnSubmit_Click" />

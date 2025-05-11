@@ -123,6 +123,24 @@ namespace TPWeb_equipo_5B
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
+        /// pnlExito control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlExito;
+
+        /// <summary>
+        /// lblExito control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblExito;
+
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
