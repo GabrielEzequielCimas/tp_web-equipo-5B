@@ -16,17 +16,18 @@ namespace TPWeb_equipo_5B
 
         }
 
-        protected bool validarVoucher (string voucher) {
+        protected bool validarVoucher(string voucher)
+        {
             VoucherNegocio negocio = new VoucherNegocio();
             List<Vouchers> listaVouchers = negocio.Listar();
-            bool encontrado =false;
+            bool encontrado = false;
             bool invalido = false;
             foreach (Vouchers buscarVoucher in listaVouchers)
             {
                 if (buscarVoucher.codigoVoucher == voucher)
                 {
                     encontrado = true;
-                    
+
                     if (buscarVoucher.FechaCanje != null)
                     {
                         invalido = true;
