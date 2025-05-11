@@ -53,7 +53,9 @@ namespace TPWeb_equipo_5B
         {
             if (validarVoucher(txtVoucher.Text))
             {
-                Response.Redirect("SeleccionPremio.aspx");
+                Session.Add("voucher", txtVoucher.Text);//aca estoy guardando la
+                //tengo q poner voucher = Session.["voucher"] != null ? Session.["voucher"].ToString() : ""; validadndo q no este vacio
+                Response.Redirect("SeleccionPremio.aspx", false);
             }
         }
     }
