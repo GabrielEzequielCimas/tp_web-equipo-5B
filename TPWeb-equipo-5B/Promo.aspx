@@ -2,8 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <main aria-labelledby="title" class="container mt-4">
-        <h2 id="title" class="mb-3"><%: Title %>.</h2>
-        <p class="mb-4">¡Ingresá el código de tu voucher!</p>
+        <h4 class="mb-4">¡Ingresá el código de tu voucher!</h4>
 
         <div class="mb-3">
             <asp:TextBox ID="txtVoucher" runat="server" CssClass="form-control" placeholder="Código del voucher"></asp:TextBox>
