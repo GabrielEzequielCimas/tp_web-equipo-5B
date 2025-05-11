@@ -34,6 +34,10 @@
             <asp:Label ID="lblTerminosError" runat="server" CssClass="text-danger small" Text="Por favor acepte los términos y condiciones." Visible="false"></asp:Label>
         </div>
 
+        <asp:Panel ID="pnlError" runat="server" Visible="false" CssClass="alert alert-danger">
+            <asp:Label ID="lblError" runat="server" />
+        </asp:Panel>
+
         <!-- Boton Submit -->
         <div>
             <asp:Button ID="btnSubmit" runat="server" Text="Participar!" CssClass="btn btn-primary px-4" OnClick="btnSubmit_Click" />

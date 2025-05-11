@@ -15,7 +15,12 @@ namespace TPWeb_equipo_5B
     {
         protected void rptArticulos_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            Response.Redirect("cargaDatos");
+            if (e.CommandName == "Seleccionar")
+            {
+                string codigoVoucher = Request.QueryString["codigo"];
+                string idArticulo = e.CommandArgument.ToString();
+                Response.Redirect($"CargaDatos.aspx?codigo={codigoVoucher}&idArticulo={idArticulo}");
+            }
         }
         protected void rptArticulos_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
