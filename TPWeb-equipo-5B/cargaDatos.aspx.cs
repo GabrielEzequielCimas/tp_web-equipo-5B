@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -176,7 +177,7 @@ namespace TPWeb_equipo_5B
 
                 if (canjeExitoso)
                 {
-                    Response.Redirect("ExitoCanje.aspx?codigo=" + codigoVoucher);
+                    MostrarExito($"¡Canje exitoso! Voucher {codigoVoucher} canjeado correctamente.");
                 }
                 else
                 {
@@ -195,6 +196,7 @@ namespace TPWeb_equipo_5B
             lblError.Text = mensaje;
         }
 
+<<<<<<< Updated upstream
         protected void txtDNI_TextChanged(object sender, EventArgs e)
         {
             lblError.Text = "Evento ejecutado"; // Solo para probar
@@ -213,6 +215,13 @@ namespace TPWeb_equipo_5B
                     txtCP.Text = buscarCliente.CP;
                 }
             }
+=======
+        private void MostrarExito(string mensaje)
+        {
+            pnlError.Visible = false;
+            pnlExito.Visible = true;
+            lblExito.Text = mensaje;
+>>>>>>> Stashed changes
         }
     }
 }
