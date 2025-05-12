@@ -6,7 +6,7 @@
         <!-- DNI -->
         <div class="mb-3">
             <h6>DNI</h6>
-            <asp:TextBox ID="txtDNI" runat="server" CssClass="form-control mb-2" placeholder="99888777"></asp:TextBox>
+            <asp:TextBox ID="txtDNI" runat="server" CssClass="form-control mb-2" placeholder="99888777" AutoPostBack="true" OnTextChanged="txtDNI_TextChanged"></asp:TextBox>
         </div>
 
         <!-- Informacion Personal -->
