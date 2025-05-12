@@ -16,6 +16,8 @@ namespace TPWeb_equipo_5B
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Title = "Ingresa tus datos - Promo Ganá";
+
             if (!IsPostBack)
             {
                 // Verificar parametros al cargar la pagina

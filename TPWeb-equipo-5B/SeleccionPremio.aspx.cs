@@ -36,6 +36,8 @@ namespace TPWeb_equipo_5B
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Title = "Selecciona tu premio - Promo Ganá";
+
             if (!IsPostBack)
             {
                 ArticuloNegocio negocio = new ArticuloNegocio();

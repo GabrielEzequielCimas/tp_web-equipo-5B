@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CargaDatos.aspx.cs" Inherits="TPWeb_equipo_5B.CargaDatos" %><asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="%: Page.Title %" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CargaDatos.aspx.cs" Inherits="TPWeb_equipo_5B.CargaDatos" %><asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <main aria-labelledby="title" class="container mt-4">
         <h1 class="mb-4">Ingresá tus datos</h1>

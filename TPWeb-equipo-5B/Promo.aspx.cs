@@ -13,7 +13,7 @@ namespace TPWeb_equipo_5B
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Page.Title = "Verificá tu voucher - Promo Ganá";
         }
 
         protected bool validarVoucher(string voucher)
