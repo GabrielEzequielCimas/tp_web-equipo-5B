@@ -9,7 +9,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using dominio;
-using negocio;
 
 namespace TPWeb_equipo_5B
 {
@@ -196,7 +195,6 @@ namespace TPWeb_equipo_5B
             lblError.Text = mensaje;
         }
 
-<<<<<<< Updated upstream
         protected void txtDNI_TextChanged(object sender, EventArgs e)
         {
             lblError.Text = "Evento ejecutado"; // Solo para probar
@@ -215,13 +213,13 @@ namespace TPWeb_equipo_5B
                     txtCP.Text = buscarCliente.CP;
                 }
             }
-=======
+        }
+
         private void MostrarExito(string mensaje)
         {
             pnlError.Visible = false;
             pnlExito.Visible = true;
             lblExito.Text = mensaje;
->>>>>>> Stashed changes
         }
     }
 }
